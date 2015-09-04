@@ -11,7 +11,7 @@
 			this.wall.accident(bottle);
 		})
 		.then(/there are (\d+) green bottles standing on the wall/, function(bottles){
-            expect(this.wall.bottles + '').toBe(bottles);
+            expect(this.wall.getBottles()).toBe(parseInt(bottles, 10));
 		});
 })();
 
@@ -22,6 +22,10 @@ function Wall(){
 
 Wall.prototype.setBottles = function setBottles(bottles) {
   this.bottles = bottles;
+}
+
+Wall.prototype.getBottles = function getBottles() {
+  return this.bottles;
 }
 
 Wall.prototype.accident = function accident(bottle) {
