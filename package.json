@@ -1,0 +1,32 @@
+{
+  "name": "karma-jasmine-feature-example",
+  "version": "0.1.0",
+  "description": "Example Karma framework to write tests with gherkin for jasmine",
+  "main": "lib/index.js",
+  "keywords": [
+    "gherkin",
+    "bdd",
+    "jasmine",
+    "karma",
+    "karma-plugin",
+    "karma-adapter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gregorylimoratto/karma-jasmine-feature.git"
+  },
+  "scripts": {
+    "pretest": "npm install",
+    "test": "karma start"
+  },
+  "author": "Andres Rios <rianby64@gmail.com>",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "karma": "~0.13.9",
+    "gherkin": "~3.1.1",
+    "karma-jasmine": "~0.3.6",
+    "karma-phantomjs-launcher": "~0.2.1",
+    "karma-jasmine-feature": "~1.0.5"
+  }
+}
