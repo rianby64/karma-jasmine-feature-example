@@ -31,24 +31,3 @@
 		.when(/I include this scenario/,function(){ throw new Error("Should not be called"); })
 		.then(/Nothing happens/,function(){ throw new Error("Should not be called"); })
 })();
-
-
-function Calculator(){ 
-	this.inputs = [];
-}
-
-Calculator.prototype.add = function(){
-	
-}
-
-Calculator.prototype.getDisplayedValue = function(){
-	
-}
-
-Calculator.prototype.setInput = function(value){
-	this.inputs.push(value);
-}
-
-Calculator.prototype.convert = function(){
-	
-}
