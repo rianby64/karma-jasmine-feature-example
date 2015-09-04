@@ -2,7 +2,6 @@
   "name": "karma-jasmine-feature-example",
   "version": "0.1.0",
   "description": "Example Karma framework to write tests with gherkin for jasmine",
-  "main": "lib/index.js",
   "keywords": [
     "gherkin",
     "bdd",
